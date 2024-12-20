@@ -1,5 +1,5 @@
 
-import image from "../../../../public/portfolio_1.png"
+import image from "../../../../public/portfolio_1.jpg"
 import Content from "../../../Components/Home/Content/Content";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";

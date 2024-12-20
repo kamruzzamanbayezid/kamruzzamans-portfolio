@@ -1,7 +1,7 @@
 import ContactForm from "../../../UI/ContactForm/ContactForm";
 import Icons from "../../../UI/Icons/Icons";
 import PrimaryTitle from "../../../UI/PrimaryTitle/PrimaryTitle";
-import image from "../../../../public/portfolio_1.png";
+import image from "../../../../public/portfolio_1.jpg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
@@ -13,7 +13,7 @@ export default function Contact() {
   const messengerRef = useRef(null);
 
   const handleWhatsAppRedirect = () => {
-    const phoneNumber = "01923720498"; // Your WhatsApp number with country code
+    const phoneNumber = "+8801882888860"; // Your WhatsApp number with country code
     const message = "Hello, I would like to contact you"; // Message to send
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -22,7 +22,7 @@ export default function Contact() {
   };
 
   const handleMessengerRedirect = () => {
-    const usernameOrId = "100063140996982"; // Replace with Facebook username or ID
+    const usernameOrId = "kamruzzaman.baayeziid"; // Replace with Facebook username or ID
     const url = `https://m.me/${usernameOrId}`;
     window.open(url, "_blank"); // Open Messenger chat in a new tab
   };
@@ -64,11 +64,11 @@ export default function Contact() {
           <div className="flex flex-col gap-4">
             <div className="flex flex-col justify-start gap-4">
               <h1 className="text-xl">Email</h1>
-              <p className="text-2xl font-bold">mdhasankha.wd@gmail.com</p>
+              <p className="text-2xl font-bold">kamruzzamanbayezid07@gmail.com</p>
             </div>
             <div className="flex flex-col justify-start gap-4">
               <h1 className="text-xl">Phone</h1>
-              <p className="text-2xl font-bold">+880 1923720498</p>
+              <p className="text-2xl font-bold">+8801882888860</p>
             </div>
             <div className="flex flex-col justify-start gap-4">
               <h1 className="text-xl">Address</h1>
@@ -83,7 +83,7 @@ export default function Contact() {
               <Icons style={"text-5xl cursor-pointer"} type="whatsapp" />
             </div>
             <div ref={linkedinRef}>
-              <a href="https://www.linkedin.com/in/mdhasankha" target="_blank">
+              <a href="https://www.linkedin.com/in/kamruzzaman-bayezid-9a6965182" target="_blank">
                 <Icons style={"text-5xl cursor-pointer"} type="linkedin" />
               </a>
             </div>

@@ -25,15 +25,15 @@ export default function Content() {
     <div ref={container} className="py-6 flex flex-col">
       <div className="lending_text my-4">
         <PrimaryTitle
-          main={"Hay! i am Hasan"}
+          main={"Hey! i am Bayezid"}
           mainStyle={"text-4xl lg:text-6xl"}
           subStyle={"bg-secondary"}
-          subTitle={"Md. Hasan Kha"}
+          subTitle={"Md. Kamruzzaman Bayezid"}
         />
       </div>
       <div className="lending_text my-4">
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-justify text-[#c7ced1]">
-          Hi, I’m Md Hasan Kha, a passionate MERN Stack Developer with over 1
+          Hi, I’m Md Kamruzzaman Bayezid, a passionate MERN Stack Developer with over 1
           year of experience building responsive, user-friendly web
           applications. I specialize in React, Node.js, and MongoDB, and I’m
           always excited to take on new challenges. Let’s create something
@@ -48,7 +48,7 @@ export default function Content() {
           </Buttons>
         </a>
         <a
-          href="https://drive.google.com/file/d/18jZldEhBf0r2dMbEQGK-8L4SNAzVd7ka/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1OK1xK15n6YRonbPEZYsQRyGxRa9a1P2g/view?usp=drive_link"
           target={"_blank"}
         >
           <Buttons handler={handleDownloadBtn} type={"outline"}>

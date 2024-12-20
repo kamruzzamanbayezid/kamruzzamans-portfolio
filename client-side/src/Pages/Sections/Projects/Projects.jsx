@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef} from "react";
 // import Pagination from "../../../UI/Pagination/Pagination";
 import PrimaryTitle from "../../../UI/PrimaryTitle/PrimaryTitle";
 import ProjectCard from "../../../UI/ProjectCard/ProjectCard";
@@ -7,21 +7,45 @@ import gsap from "gsap";
 import Icons from "../../../UI/Icons/Icons";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Buttons from "../../../UI/Buttons/Buttons";
+import petCareImg from "../../../../public/projects-img/pet-care.jpg";
+import brainWaveImg from "../../../../public/projects-img/brain-wave.jpg";
+import webJobImg from "../../../../public/projects-img/web-job.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// sample projects
+// Sample projects
 const projects = [
   {
-    name: "Teachfosys",
-    liveLink: "https://teachfosys.com/",
-    image: "https://i.ibb.co.com/YcksWb2/Screenshot-223.jpg",
-    technologies: ["react", "tailwind"],
+    name: "Pet Care Management",
+    liveLink: "https://petscarefrontend.netlify.app",
+    gitHubLink: "https://github.com/Creativecoders-learning/petsCare.git",
+    image: `${petCareImg}`,
+    overview: "A platform to manage pet care services, bookings, and records.",
+    technologies: ["React", "Tailwind"],
+  },
+  {
+    name: "Brainwave Learning Platform",
+    liveLink: "https://brainwave-learning.netlify.app",
+    gitHubLink: "https://github.com/abdurrahmanrahat/e-learning.git",
+    image: `${brainWaveImg}`,
+    overview:
+      "An e-learning platform to share and access educational resources.",
+    technologies: ["React", "Tailwind"],
+  },
+  {
+    name: "Web Jobs Platform",
+    liveLink: "https://a11-dev-connect-bd.web.app/",
+    gitHubLink:
+      "https://github.com/kamruzzamanbayezid/A11-dev-connect-bd_client.git",
+    image: `${webJobImg}`,
+    overview: "A job portal connecting developers with companies and projects.",
+    technologies: ["React", "Tailwind"],
   },
 ];
 
 export default function Projects() {
   const container = useRef(null);
+
   useGSAP(
     () => {
       gsap.from(".card_container", {
@@ -32,7 +56,6 @@ export default function Projects() {
           trigger: container.current,
           start: "top center",
           end: "top -200%",
-          // markers: true,
         },
       });
     },
@@ -61,37 +84,43 @@ export default function Projects() {
             </li>
             <ProjectCard project={project} />
             <div className="flex flex-wrap justify-center items-center gap-4 mt-6">
+              {/* About Button */}
               <div className="w-[30%]">
-                <Buttons type={"outline"}>
+                <Buttons
+                  type={"outline"}
+                >
                   <span>About</span>
                   <span className="text-lg ">
                     <Icons type={"arrow-right"} />
                   </span>
                 </Buttons>
               </div>
+              {/* GitHub Button */}
               <div className="w-[30%]">
-                <Buttons type={"outline"}>
-                  <span>Github</span>
-                  <span className="text-lg ">
-                    <Icons type={"arrow-right"} />
-                  </span>
-                </Buttons>
+                <a href={`${project?.gitHubLink}`} target={"_blank"}>
+                  <Buttons type={"outline"}>
+                    <span>Github</span>
+                    <span className="text-lg ">
+                      <Icons type={"arrow-right"} />
+                    </span>
+                  </Buttons>
+                </a>
               </div>
+              {/* Demo Button */}
               <div className="w-[30%]">
-                <Buttons type={"outline"}>
-                  <span>Demo</span>
-                  <span className="text-lg">
-                    <Icons type={"arrow-right"} />
-                  </span>
-                </Buttons>
+                <a href={`${project?.liveLink}`} target={"_blank"}>
+                  <Buttons type={"outline"}>
+                    <span>Live Link</span>
+                    <span className="text-lg">
+                      <Icons type={"arrow-right"} />
+                    </span>
+                  </Buttons>
+                </a>
               </div>
             </div>
           </div>
         ))}
       </div>
-      {/* <div className="flex justify-center w-full">
-        <Pagination />
-      </div> */}
     </div>
   );
 }

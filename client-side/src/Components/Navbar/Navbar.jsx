@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useRef, useState } from "react";
 import Icons from "../../UI/Icons/Icons";
-import brand from "../../../public/brand.png";
+import brand from "../../../public/logo_white_letter.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -95,10 +95,10 @@ export default function Navbar({ activeSection, setActiveSection }) {
   return (
     <nav className="relative mx-auto max-w-full lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem] flex justify-between items-center lg:px-4 px-8 py-6">
       <a href="#" className="brand flex gap-1 justify-end">
-        <figure className="h-[40px] w-[40px]">
+        {/* <figure className="h-[80px] w-[80px]">
           <img className="h-full w-full" src={brand} alt="brand" />
-        </figure>
-        <h1 className="text-5xl font-bold text-white uppercase">asan</h1>
+        </figure> */}
+        <h1 className="text-5xl font-bold text-white uppercase">Bayezid</h1>
       </a>
       <div className="navLink text-white hidden lg:flex gap-10 text-base uppercase">
         {navLinks}
