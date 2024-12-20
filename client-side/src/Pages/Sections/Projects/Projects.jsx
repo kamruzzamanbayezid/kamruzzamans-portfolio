@@ -21,7 +21,7 @@ const projects = [
     gitHubLink: "https://github.com/Creativecoders-learning/petsCare.git",
     image: `${petCareImg}`,
     overview: "A platform to manage pet care services, bookings, and records.",
-    technologies: ["React", "Tailwind"],
+    technologies: ["react", "tailwind"],
   },
   {
     name: "Brainwave Learning Platform",
@@ -30,7 +30,7 @@ const projects = [
     image: `${brainWaveImg}`,
     overview:
       "An e-learning platform to share and access educational resources.",
-    technologies: ["React", "Tailwind"],
+    technologies: ["react", "tailwind"],
   },
   {
     name: "Web Jobs Platform",
@@ -39,7 +39,7 @@ const projects = [
       "https://github.com/kamruzzamanbayezid/A11-dev-connect-bd_client.git",
     image: `${webJobImg}`,
     overview: "A job portal connecting developers with companies and projects.",
-    technologies: ["React", "Tailwind"],
+    technologies: ["react", "tailwind"],
   },
 ];
 
