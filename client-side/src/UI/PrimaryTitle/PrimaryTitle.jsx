@@ -17,7 +17,7 @@ export default function PrimaryTitle({
         </span>
       </div>
       <div className={`my-2 ${mainStyle}`}>
-        <span className="uppercase font-bold text-primary leading-10">
+        <span className="capitalize font-bold text-primary leading-10">
           {main}
         </span>{" "}
         <span className="uppercase font-bold text-secondary leading-10">

@@ -10,7 +10,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { setDocumentTitle } from "./Utils/TitleUtils";
 
-const websiteName = "Portfolio of mdhasankha";
+const websiteName = "Portfolio of Bayezid";
 
 export default function App() {
   const navRef = useRef();
